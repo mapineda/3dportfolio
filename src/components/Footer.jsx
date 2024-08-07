@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 
-const Contact = () => {
+const Footer = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -84,4 +84,4 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Footer, "footer");

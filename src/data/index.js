@@ -25,33 +25,23 @@ export const navLinks = [
 
 const experiences = [
   {
-    title: "YouTube Content Creator",
-    company_name: "Self Employed",
-    date: "2024 - Present",
-    details: [
-      "Built a subscriber base of over <span style='color: white;'>10 subscribers</span> by creating video content to help programmers.",
-      "Crafted visually appealling programming videos that have garnered over <span style='color: white;'>50 views</span>.",
-      "Produced high-quality educational and entertaining articles for clients including <span style='color: white;'>Bitcoinist and Bitcoin Magazine</span>.",
-    ],
-  },
-  {
     title: "Full Stack Software Engineer",
     company_name: "SamCart",
     date: "2021 - 2024",
     details: [
-      "Developed and delivered custom interdisciplinary coding portfolio for clients including <span style='color: white;'>Wolf of Wallstreet, Hubspot, and Taking Cara Babies</span>.",
-      "<span style='color: white;'>Designed and developed innovative</span> AI applications using Slate.js and the MERN stack.",
-      "<span style='color: white;'>Managed full project lifecycle</span> from concept to deployment in successful and timely project completions of a self-serving payment portal for customers.",
+      "Developed and delivered custom interdisciplinary coding portfolio for clients including <span style='color: white;'>Wolf of Wallstreet, Hubspot</span>, and <span style='color: #FF7F11'>Taking Cara Babies</span></span>.",
+      "<span style='color: white;'>Designed and developed innovative</span> AI applications using <span style='color: #FF7F11'>MERN stack</span> and the Slate.js.",
+      "<span style='color: white;'>Managed full project lifecycle</span> from concept to deployment in successful and timely project completions of a self-serving payment portal using <span style='color: #FF7F11'>Stripe.js</span> for customers with login attemps averaging at ~2,200/day.",
     ],
   },
   {
-    title: "Software Engineer I",
+    title: "Full Stack Software Engineer",
     company_name: "AppSumo",
     date: "2018 - 2021",
     details: [
-      "Migrated custom enterprise applications from a <span style='color: white;'>legacy monolith</span> to latest version increasing revenue from 2M to 12M.",
-      "Developed and maintained <span style='color: white;'>scalable backend services</span>, ensuring high availability for critical business applications.",
-      "<span style='color: white;'>Collaborated with a team</span> to design and implement front-end interfaces.",
+      "Migrated custom enterprise applications from a <span style='color: white;'>legacy monolith</span> to latest version increasing revenue from <span style='color: #FF7F11'>2M to 12M</span>.",
+      "Developed and maintained <span style='color: white;'>scalable backend services</span>, ensuring <span style='color: #FF7F11'>high availability</span> for critical business applications.",
+      "<span style='color: white;'>Hired and Collaborated </span> with an <span style='color: #FF7F11'>international</span> team</span> to design and implement front-end interfaces.",
     ],
   },
   {
@@ -59,21 +49,20 @@ const experiences = [
     company_name: "Exacta Systems",
     date: "2016 - 2018",
     details: [
-      "Built an <span style='color: white;'>automated financial report</span> for C-suite, using Phantom.JS, SES, Lamda and Node.js.",
-      "Led <span style='color: white;'>containerization technology R&D</span> and presented cost/benefit analysis to C-suite.",
-      "Collaborated with <span style='color: white;'>design</span> and product to deliver UI updates at hundreds of Casinos across the nation.",
+      "Built an <span style='color: white;'>automated financial report</span> for C-suite, using Phantom.JS, SES, Lamda and Node.js totaling <span style='color: #FF7F11'>$440M</span> annually.",
+      "Led <span style='color: white;'>containerization technology R&D</span> and presented <span style='color: #FF7F11'>cost/benefit</span> analysis to C-suite.",
+      "Collaborated with <span style='color: white;'>design</span> and product to deliver real time UI updates monitoring hundreds of <span style='color: #FF7F11'>Casino revenue</span> sites across the nation.",
     ],
   },
-  // {
-  //   title: "UI Developer",
-  //   company_name: "Bulu Marketplace",
-  //   date: "2016 - 2016",
-  //   details: [
-  //     "Built an <span style='color: white;'>automated financial report</span> for C-suite, using Phantom.JS, SES, Lamda and Node.js.",
-  //     "Led <span style='color: white;'>containerization technology R&D</span> and presented cost/benefit analysis to C-suite.",
-  //     "Collaborated with <span style='color: white;'>design</span> and product to deliver UI updates at hundreds of Casinos across the nation.",
-  //   ],
-  // },
+  {
+    title: "UI Developer",
+    company_name: "Bulu Marketplace",
+    date: "2016 - 2016",
+    details: [
+      "Developed <span style='color: white;'>UI and feature</span> rollout of <span style='color: #FF7F11'>data platform</span> and e-commerce site using Django.",
+      "Oversaw <span style='color: white;'>product related</span> strategy with <span style='color: #FF7F11'>CPO</span>.",
+    ],
+  },
   // {
   //   title: "Freelance Developer",
   //   company_name: "COPA Paris 2016",

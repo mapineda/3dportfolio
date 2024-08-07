@@ -63,8 +63,8 @@ const NavBar = () => {
             <li
               key={nav.id}
               className={`relative flex items-center ${
-                active === nav.id ? "text-white" : "text-slate-500"
-              } hover:text-white text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer`}
+                active === nav.id ? "text-slate-300" : "text-slate-500"
+              } hover:text-slate-300 text-[18px] lg:text-[24px] font-bold pointer-events-auto cursor-pointer`}
               onClick={() => setActive(nav.id)}
             >
               {active === nav.id && (

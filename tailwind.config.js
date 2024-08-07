@@ -5,10 +5,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#011825",
-        secondary: "#F0EFEB",
-        tertiary: "#0D3056",
-        quaternary: "#1689C8",
+        primary: "#001824",
+        secondary: "#F5FBEF",
+        tertiary: "#222A68",
+        quaternary: "#17A398",
+        quinary: "#FF7F11",
       },
       screens: {
         'xs': "450px",
