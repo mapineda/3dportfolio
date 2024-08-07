@@ -30,7 +30,7 @@ const Contact = () => {
 
     try {
       // Replace with your API Gateway endpoint
-      const response = await axios.post('https://dqwdja84sk.execute-api.us-east-1.amazonaws.com/prod', form);
+      const response = await axios.post('https://dqwdja84sk.execute-api.us-east-1.amazonaws.com/prod/send-email', form);
       
       alert('Thank you. I will get back to you as soon as possible.');
       setForm({
