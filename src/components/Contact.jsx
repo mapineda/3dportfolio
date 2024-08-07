@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-// import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import axios from "axios"; // You'll need to install axios
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -20,10 +19,35 @@ const Contact = () => {
     controls.start("show");
   }, [controls]);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      // Replace with your API Gateway endpoint
+      const response = await axios.post('https://dqwdja84sk.execute-api.us-east-1.amazonaws.com/prod', form);
+      
+      alert('Thank you. I will get back to you as soon as possible.');
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('There was an error sending your message. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div
-      className="md:m-12 md:px-48 flex flex-col sm:flex-row gap-10 overflow-hidden"
-    >
+    <div className="md:m-12 md:px-48 flex flex-col sm:flex-row gap-10 overflow-hidden">
       <motion.div
         initial="hidden"
         animate={controls}
@@ -46,35 +70,41 @@ const Contact = () => {
       >
         <h3 className={styles.sectionText}>Contact</h3>
 
-        <form
-          action="https://getform.io/f/8b086558-47d4-49d0-852d-ec8c22da40f7"
-          method="POST"
-          className="mt-12 gap-4 flex flex-col"
-        >
+        <form onSubmit={handleSubmit} className="mt-12 gap-4 flex flex-col">
           <span className='text-white font-medium mt-3'>Full Name</span>
           <input
             type="text"
             name="name"
+            value={form.name}
+            onChange={handleChange}
             placeholder="Enter your full name"
             className="bg-tertiary p-4 text-white border border-[#17A398] font-medium rounded"
+            required
           />
           <span className='text-white font-medium mt-3'>Email Address</span>
           <input
-            type="text"
+            type="email"
             name="email"
+            value={form.email}
+            onChange={handleChange}
             placeholder="Enter your email address"
             className="bg-tertiary p-4 text-white border border-[#17A398] font-medium rounded"
+            required
           />
           <span className='text-slate-300 font-medium mt-3'>Message</span>
           <textarea
             name="message"
+            value={form.message}
+            onChange={handleChange}
             placeholder="Enter your message"
             rows="10"
             className="bg-tertiary p-4 text-white border border-[#17A398] font-medium rounded"
+            required
           />
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary rounded-lg'
+            disabled={loading}
           >
             {loading ? "Sending..." : "Send"}
           </button>
