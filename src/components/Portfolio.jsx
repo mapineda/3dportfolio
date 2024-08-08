@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { portfolio } from "../data";
@@ -13,6 +13,7 @@ const ProjectCard = ({
   name,
   description,
   image,
+  link,
 }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -46,7 +47,12 @@ const ProjectCard = ({
       <div className={`w-full md:w-2/5 px-6 md:p-16 flex flex-col justify-center ${isEven ? "text-left md:text-left" : "text-left md:text-right"}`}>
         <h3 className='text-white font-medium text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:text-5xl leading-tight'>{name}</h3>
         <p className='mt-4 text-secondary text-sm sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl'>{description}</p>
-        <Button as="a" href="https://whereisthemouse.com">Where is the mouse?</Button>
+          <Button 
+          as="a"
+          href={`${link}`}
+          className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-full w-32 h-full mt-5">
+            Check it out
+          </Button>
       </div>
     </motion.div>
   );

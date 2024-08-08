@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-const Button = ({ onClick, children, as: Component = 'button', ...rest }) => {
+const Button = ({ onClick, children, as: Component = 'button', className='' ,...rest }) => {
   return (
-    <Component onClick={onClick} className="button" {...rest}>
+    <Component onClick={onClick} className={`button ${className}`}  {...rest}>
       {children}
     </Component>
   );
