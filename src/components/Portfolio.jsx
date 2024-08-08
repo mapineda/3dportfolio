@@ -50,7 +50,7 @@ const ProjectCard = ({
           <Button 
           as="a"
           href={`${link}`}
-          className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-full w-32 h-full mt-5">
+          className="bg-[#17A398] hover:bg-[#0F6B63] text-white font-bold py-2 px-4 border-b-4 border-[#144769] hover:border-[#185982] rounded-full w-32 h-full mt-5">
             Check it out
           </Button>
       </div>
