@@ -1,0 +1,62 @@
+  __  __ 
+ |  \/  |
+ | |\/| |
+ | |  | |
+ |_|  |_|
+         
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | DISEÑADOR
+
+Hamish Williams
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+https://x.com/marcopineda__
+github.com/mapineda
+
+_______________________________________________________________________________
+
+TECHNOLOGY | TECNOLOGÍA
+
+Vite - Build tool for the boilerplate and structure
+JavaScript - Programming language
+React - JavaScript library for building user interfaces
+Tailwind - CSS framework
+Three.js - Animated 3D graphics
+Framer Motion - Interactive animations
+Hostinger - Web hosting platform
+GitHub - Version control & CI/CD
+Vite - Build tool for the boilerplate and structure
+JavaScript - Programming language
+React - JavaScript library for building user interfaces
+Tailwind - CSS framework
+Three.js - Animated 3D graphics
+Framer Motion - Interactive animations
+GitHub - Version control & CI/CD
+AWS Amplify - Application hosting platform
+AWS SES - Handles Email using cloud infrastructure
+AWS API Gateway - API endpoint for POST email form
+AWS Lambda - handles the form submission
+
+_______________________________________________________________________________
+
+FONTS | TIPOGRAFÍAS
+
+Kanit
+
+RESOURCES | FUENTES
+
+Coolors.co
+Code Inspo - https://github.com/ForrestKnight/3d-portfolio
+Spaceman by wallmasterr - https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a259f41fd99e6f56eee686dc5
+Planet Surface by jongjawi - https://stock.adobe.com/images/landscape-surface-of-planet-sky-space-science-fiction-fantasy-illustration/330880441?asset_id=330880441
+Position Animation by Teshank - https://github.com/teshank2137/portfolio
