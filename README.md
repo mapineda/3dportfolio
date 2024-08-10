@@ -5,7 +5,7 @@
 ## Introduction
 This is a code repository for my 3D portfolio website
 
-I created a 3D developer portfolio website to enhance my GitHub profile and replace my simple portfolio. This custom site, which I’ve wanted to build for a while, features impressive three.js 3D graphics, interactive animations, and parallax effects, all within an intuitive design. It provides potential clients or employers with a quick overview of my skills and projects, showcasing not only my work but also my web development capabilities. I’m aware that the parallax can be problematic when resizing the window, but I’ll get around to fixing that eventually—or maybe one of you can help me out with it.
+I borrowed, and modified a 3D developer portfolio website to enhance my GitHub profile and replace my simple portfolio. This custom site, which I’ve wanted to build for a while, features impressive three.js 3D graphics, interactive animations, and parallax effects, all within an intuitive design. 
 
 ## Technologies
 - Vite - Build tool for the boilerplate and structure

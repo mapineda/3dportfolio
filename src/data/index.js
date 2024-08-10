@@ -4,6 +4,8 @@ import {
   pursejacked,
 } from "../assets";
 
+export * from './articles';
+
 export const navLinks = [
   {
     id: "hero",
@@ -16,6 +18,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "Experience",
+  },
+  {
+    id: "blog",
+    title: "Blog",
   },
   {
     id: "contact",

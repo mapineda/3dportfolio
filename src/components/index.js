@@ -4,8 +4,10 @@ import Hero from "./Hero";
 import Portfolio from "./Portfolio";
 import RobotCanvas from "./Robot";
 import NavBar from "./NavBar";
+import BlogSection from "./BlogSection";
+
 
 export {
-    Contact, Experience, Hero, Portfolio, RobotCanvas, NavBar
+    NavBar, Hero, Experience, Portfolio, BlogSection, Contact, RobotCanvas
 };
 
