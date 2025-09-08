@@ -13,25 +13,22 @@ const ArticleCard = ({ articles, onClick, isActive, isMobile }) => {
   return (
     <div
       onClick={onClick}
-      className={`cursor-pointer sm:mb-5 p-5 max-w-xl relative sm:text-left text-center ${
-        isMobile ? "text-quaternary" : ""
-      }`}
+      className={`cursor-pointer sm:mb-5 p-5 max-w-xl relative sm:text-left text-center ${isMobile ? "text-quaternary" : ""
+        }`}
     >
       <h3
-        className={`text-xl lg:text-2xl xl:text-3xl font-bold sm:pl-8 ${
-          isActive || isMobile ? "text-quaternary" : "text-slate-600"
-        }`}
+        className={`text-xl lg:text-2xl xl:text-3xl font-bold sm:pl-8 ${isActive || isMobile ? "text-quaternary" : "text-slate-600"
+          }`}
       >
         {articles.publicTitle}
       </h3>
       <p
-        className={`text-md lg:text-lg xl:text-2xl sm:font-medium pt-2 sm:pl-8 ${
-          isActive || isMobile ? "text-white" : "text-slate-600"
-        }`}
+        className={`text-md lg:text-lg xl:text-2xl sm:font-medium pt-2 sm:pl-8 ${isActive || isMobile ? "text-white" : "text-slate-600"
+          }`}
       >
         {articles.author} | {articles.date} | {articles.tags.map((tag, index) => (
           <li
-          key={`article-tag-${index}`}>{tag}</li>
+            key={`article-tag-${index}`}>{tag}</li>
         ))}
       </p>
       {(isActive || isMobile) && (
@@ -54,10 +51,10 @@ const ArticleContent = ({ article }) => {
           />
         ))}
         <li className="my-6">
-        <Button 
-          as="a"
-          href={`/`}
-          className="bg-[#17A398] hover:bg-[#0F6B63] text-white font-bold py-2 px-4 border-b-4 border-[#144769] hover:border-[#185982] rounded-full w-32 h-full mt-4">
+          <Button
+            as="a"
+            href="https://dev.to/mapineda"
+            className="bg-[#17A398] hover:bg-[#0F6B63] text-white font-bold py-2 px-4 border-b-4 border-[#144769] hover:border-[#185982] rounded-full w-32 h-full mt-4">
             Read More...
           </Button>
         </li>
