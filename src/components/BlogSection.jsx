@@ -81,7 +81,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="sm:my-20">
+    <div className="sm:my-10">
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionText} text-center`}>
           Captain&apos;s Log
