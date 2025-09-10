@@ -6,7 +6,7 @@ import { portfolio } from "../data";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
-import  Button from "./Button";
+import Button from "./Button";
 
 const ProjectCard = ({
   index,
@@ -44,15 +44,15 @@ const ProjectCard = ({
         />
       </div>
 
-      <div className={`w-full md:w-2/5 px-6 md:p-16 flex flex-col justify-center ${isEven ? "text-left md:text-left" : "text-left md:text-right"}`}>
+      <div className={`w-full md:w-2/5 px-6 md:p-16 flex flex-col justify-center ${isEven ? "text-left md:text-left" : "text-left md:text-right"}`} style={{ paddingTop: 0 }}>
         <h3 className='text-white font-medium text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:text-5xl leading-tight'>{name}</h3>
         <p className='mt-4 text-secondary text-sm sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-xl'>{description}</p>
-          <Button 
+        <Button
           as="a"
           href={`${link}`}
           className="bg-[#17A398] hover:bg-[#0F6B63] text-white font-bold py-2 px-4 border-b-4 border-[#144769] hover:border-[#185982] rounded-full w-32 h-full md:h-[3rem] mt-5">
-            Check it out
-          </Button>
+          Check it out
+        </Button>
       </div>
     </motion.div>
   );

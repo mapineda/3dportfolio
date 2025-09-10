@@ -12,6 +12,10 @@ export const navLinks = [
     title: "Hero",
   },
   {
+    id: "about",
+    title: "About",
+  },
+  {
     id: "portfolio",
     title: "Portfolio",
   },
@@ -19,13 +23,55 @@ export const navLinks = [
     id: "experience",
     title: "Experience",
   },
-  {
-    id: "blog",
-    title: "Blog",
-  },
+  // {
+  //   id: "blog",
+  //   title: "Blog",
+  // },
   {
     id: "contact",
     title: "Contact",
+  },
+];
+
+const about = [
+  {
+    content: [
+      `I’m Marco Pineda, a Full Stack Software Consultant and builder with a passion for creating innovative digital solutions.
+      With experience across full-stack development, cloud infrastructure, and AI-driven applications, I enjoy turning complex ideas into simple, effective products.
+      Outside of work, I’m always exploring new projects, learning new technologies, and finding ways to blend creativity with technology.
+      When I’m not at the keyboard, you’ll can find me at the gym, hiking, hunting, fishing, or camping—anything that gets me outdoors`,
+    ],
+  }
+];
+
+const portfolio = [
+  // {
+  //   name: "Open Source electric Vertical Take-Off and Landing Repo",
+  //   description:
+  //     "A starred GitHub repo containing a curated list of electric Vertical Take-Off and Landing startups.",
+  //   image: osevtol,
+  //   link: "https://github.com/mapineda/open-source-eVTOL-startups",
+  // },
+  {
+    name: "USAi.gov",
+    description:
+      "Developed the USAi.gov Console, a comprehensive AI analytics and management platform for government agencies.",
+    image: usaigov,
+    link: "https://usai.gov",
+  },
+  {
+    name: "Cypress Lodge No. 1423 A.F. & A.M.",
+    description:
+      "A website for a Masonic Lodge in Cypress, TX",
+    image: cypressLodge,
+    link: "https://www.cypress1423.org/"
+  },
+  {
+    name: "Purse Jacked",
+    description:
+      "An online resource for victims of purse jugging. Built with accessibility in mind.",
+    image: pursejacked,
+    link: "https://www.pursejacked.com"
   },
 ];
 
@@ -91,36 +137,5 @@ const experiences = [
   // },
 ];
 
-const portfolio = [
-  // {
-  //   name: "Open Source electric Vertical Take-Off and Landing Repo",
-  //   description:
-  //     "A starred GitHub repo containing a curated list of electric Vertical Take-Off and Landing startups.",
-  //   image: osevtol,
-  //   link: "https://github.com/mapineda/open-source-eVTOL-startups",
-  // },
-  {
-    name: "USAi.gov",
-    description:
-      "Developed the USAi.gov Console, a comprehensive AI analytics and management platform for government agencies.",
-    image: usaigov,
-    link: "https://usai.gov",
-  },
-  {
-    name: "Cypress Lodge No. 1423 A.F. & A.M.",
-    description:
-      "A website for a Masonic Lodge in Cypress, TX",
-    image: cypressLodge,
-    link: "https://www.cypress1423.org/"
-  },
-  {
-    name: "Purse Jacked",
-    description:
-      "An online resource for victims of purse jugging. Built with accessibility in mind.",
-    image: pursejacked,
-    link: "https://www.pursejacked.com"
-  },
-];
-
-export { experiences, portfolio };
+export { about, portfolio, experiences };
 
